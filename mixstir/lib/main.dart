@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 import "HomeScreen/HomeScreen.dart";
-import "NavBar/NavBar.dart";
 
 void main() {
   runApp(MixStirApp());

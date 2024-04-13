@@ -35,6 +35,11 @@ class _NavBarState extends State<NavBar> {
       ],
       currentIndex: widget.selectedIndex,
       selectedItemColor: Colors.amber[800], // TODO: Change color scheme later
+      unselectedItemColor: Colors.grey[600], // TODO: Change color scheme later
+      type: BottomNavigationBarType.fixed,
+      selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+
+  
       onTap: widget.onItemTapped,
     );
   }
