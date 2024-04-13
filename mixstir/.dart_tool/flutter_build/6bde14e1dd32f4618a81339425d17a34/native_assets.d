@@ -1,0 +1,1 @@
+ /Users/jgarellano2/Downloads/MixStir/MixStir/mixstir/.dart_tool/flutter_build/6bde14e1dd32f4618a81339425d17a34/native_assets.yaml: 
