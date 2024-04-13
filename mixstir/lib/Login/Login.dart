@@ -14,17 +14,25 @@ class _LoginState extends State<Login> {
 
   // This method is a dummy function to simulate logging in.
   void _login() {
-    // Normally, you would use a more secure way to handle login.
     final email = _emailController.text;
     final password = _passwordController.text;
 
-    if (email == 'test@example.com' && password == 'password123') {
+    if (email == 'test' && password == 'test') {
       // Dummy condition to check login (for testing purposes).
       Navigator.pushReplacementNamed(context, '/home');
     } else {
-      // Show error message (for now just printing to console).
-      print('Invalid credentials');
+      // Show error message using a SnackBar.
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Invalid credentials'),
+        duration: Duration(seconds: 2), // Adjust the duration as needed.
+      ),
+      );
     }
+  }
+
+  void _createAccount() {
+    // Placeholder for navigation to the registration page
+    Navigator.pushNamed(context, '/register'); // Ensure you have a route set up for '/register'
   }
 
   @override
@@ -43,13 +51,10 @@ class _LoginState extends State<Login> {
               controller: _emailController,
               decoration: const InputDecoration(
                 labelText: 'Email',
-                // Styling placeholder text, change color as needed.
                 labelStyle: TextStyle(color: Colors.grey),
-                // Border color when the TextField is selected.
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.orange),
                 ),
-                // Normal border color.
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
                 ),
@@ -58,7 +63,7 @@ class _LoginState extends State<Login> {
             const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
-              obscureText: true, // Use for password input to obscure text.
+              obscureText: true,
               decoration: const InputDecoration(
                 labelText: 'Password',
                 labelStyle: TextStyle(color: Colors.grey),
@@ -74,9 +79,17 @@ class _LoginState extends State<Login> {
             ElevatedButton(
               onPressed: _login,
               style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.white, backgroundColor: Colors.orange, // Text color
+                foregroundColor: Colors.white, backgroundColor: Colors.orange,
               ),
               child: const Text('Login')
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: _createAccount,
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white, backgroundColor: Colors.orange,
+              ),
+              child: const Text('Create Account')
             ),
           ],
         ),
