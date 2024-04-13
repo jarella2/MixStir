@@ -1,0 +1,24 @@
+# General
+**/.dart_tool/  # Tooling output
+**/.flutter-plugins  
+**/.packages     # Package manager cache
+**/pubspec.lock  # Avoid lockfile conflicts
+
+# Android
+**/android/.gradle/   
+**/build/
+
+# iOS
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+**/ios/.symlinks
+
+# IDEs
+**/.idea/  # IntelliJ
+**/.vscode/ # Visual Studio Code
+
+# Build Output
+**/build/
+
+# Miscellaneous
+.DS_Store  # macOS System File
