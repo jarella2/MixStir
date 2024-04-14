@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mixstir/Accounts/content_container.dart';
 import 'package:mixstir/Accounts/profile_picture.dart';
 import 'custom_icon_button.dart';
 import 'custom_tab_bar.dart';
@@ -89,7 +90,27 @@ class _AccountsPageState extends State<AccountsPage>
             tabController: _tabController,
             userName: "Killer Mike",
             userTag: "@mikethekiller",
-          )
+          ),
+          // TabBarView
+          Expanded(
+            child: TabBarView(
+              controller: _tabController,
+              children: const [
+                // Posts tab
+                ContentContainer(tabName: "posts", usertag: "mikethekiller"),
+                // Activity tab
+                ContentContainer(
+                    tabName: "activities",
+                    usertag:
+                        "mikethekiller"), // Replace with your widget for Activity tab
+                // Followers tab
+                ContentContainer(
+                    tabName: "followers",
+                    usertag:
+                        "mikethekiller"), // Replace with your widget for Followers tab
+              ],
+            ),
+          ),
         ],
       ),
     );

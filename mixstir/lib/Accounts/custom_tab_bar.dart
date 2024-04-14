@@ -5,7 +5,7 @@ class CustomTabBar extends StatelessWidget {
   final String userTag;
   final TabController tabController; // Make sure to pass TabController
 
-  constCustomTabBar({
+  const CustomTabBar({
     Key? key,
     required this.userName,
     required this.userTag,

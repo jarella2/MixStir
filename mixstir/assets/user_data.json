@@ -1,0 +1,32 @@
+{
+    "users": {
+      "mikethekiller": {
+        "name": "Killer Mike",
+        "tabs": {
+          "posts": [
+            {
+              "date": "12 June 2023",
+              "title": "Spaghetti Carbonara",
+              "content": "Spaghetti Carbonara is a simple Italian pasta dish...",
+              "image": "https://via.placeholder.com/200"
+            }
+          ],
+          "activities": [
+            {
+              "title": "Liked",
+              "content": "Gabe liked your post",
+              "postTitle": "Spaghetti Carbonara",
+              "postImage": "https://via.placeholder.com/200"
+            }
+          ],
+          "followers": [
+            {
+              "username": "Gabriel Sheikh",
+              "handle": "gabesheikh",
+              "image": "https://via.placeholder.com/200"
+            }
+          ]
+        }
+      }
+    }
+  }
