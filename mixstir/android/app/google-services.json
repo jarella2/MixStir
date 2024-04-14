@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959259297353",
+    "project_id": "mixstir-e568c",
+    "storage_bucket": "mixstir-e568c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959259297353:android:2b04b4356f768032156198",
+        "android_client_info": {
+          "package_name": "com.mixstir.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYlKdceDgVKO2QWocP8cPvXL1jJMY7n_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
