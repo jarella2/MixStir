@@ -1,8 +1,9 @@
 import "package:flutter/material.dart";
 import "HomeScreen/HomeScreen.dart";
+import "Login/Login.dart";
 
 void main() {
-  runApp(MixStirApp());
+  runApp(const MixStirApp());
 }
 
 class MixStirApp extends StatelessWidget {
@@ -16,7 +17,10 @@ class MixStirApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: const Login(), // Your Login widget is the first screen
+      routes: {
+        '/home': (context) => MyHomePage(), // Define the '/home' route
+      },
     );
   }
 }
